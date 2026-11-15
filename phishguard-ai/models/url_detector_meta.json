@@ -1,0 +1,51 @@
+{
+  "model_type": "RandomForestClassifier",
+  "feature_names": [
+    "url_length",
+    "domain_length",
+    "num_dots",
+    "num_subdomains",
+    "is_https",
+    "has_ip_address",
+    "num_hyphens",
+    "has_at_sign",
+    "is_shortened",
+    "num_suspicious_keywords",
+    "digit_count",
+    "special_char_count",
+    "path_length",
+    "query_length",
+    "num_query_params",
+    "has_port",
+    "entropy"
+  ],
+  "n_features": 17,
+  "n_estimators": 100,
+  "random_seed": 42,
+  "test_size": 0.2,
+  "dataset_size": 7330,
+  "train_size": 5864,
+  "test_size_actual": 1466,
+  "training_time_seconds": 0.27,
+  "metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "confusion_matrix": [
+      [
+        466,
+        0
+      ],
+      [
+        0,
+        1000
+      ]
+    ]
+  },
+  "labels": {
+    "0": "legitimate",
+    "1": "phishing"
+  }
+}

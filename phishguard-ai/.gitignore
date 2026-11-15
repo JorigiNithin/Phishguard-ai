@@ -1,0 +1,57 @@
+# PhishGuard AI – .gitignore
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+env/
+.pytest_cache/
+coverage.xml
+*.log
+*.tmp
+*.bak
+
+# Node
+node_modules/
+dist/
+.cache/
+
+# Database / local state
+*.db
+*.sqlite3
+backend/data/*.db
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Models and datasets (large artifacts)
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.bin
+
+datasets/*.csv
+datasets/*.json
+datasets/*.parquet
+datasets/*.zip
